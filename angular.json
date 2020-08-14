@@ -26,7 +26,10 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [              
+              "../node_modules/vanta/vendor/three.r119.min.js",
+              "../node_modules/vanta/dist/vanta.net.min.js"
+            ]
           },
           "configurations": {
             "production": {

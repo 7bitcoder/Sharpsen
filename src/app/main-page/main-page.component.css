@@ -1,0 +1,92 @@
+@font-face {
+    font-family: cyberpunk;
+    src: url(../../assets/fonts/Cyberpunk.ttf) format("opentype");
+  }
+@font-face {
+  font-family: lato;
+  src: url(../../assets/fonts/Lato-Regular.ttf) format("opentype");
+}
+a {
+  text-decoration: none;
+}
+
+a:hover 
+{
+   text-decoration:none; 
+   cursor:pointer;  
+}
+#background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+#menu{
+  padding-top: 2vh;
+  position: static;
+  height: 6vh;
+  width: 100vw;
+  /*background-color:rgb(221, 255, 0);*/
+}
+.menuItem{
+    color: white;
+    font-family: 'lato';
+    font-size: 30px;
+    color: white;
+    display: inline;
+    transition: color 0.5s;
+}
+
+.menuItem:hover{
+    color: rgb(221, 255, 0);
+}
+
+#mainPage{
+    float: left;
+    position: static;
+    height: 92vh;
+    width: 100vw;
+}
+#leftSide{
+    float: left;
+    width: 90vw;
+}
+#rightSide{
+    width: 10vw;
+    float: left;
+}
+#logoContainer{
+    margin-top: 20vh;
+    margin-left: 10vw;
+    display: block;
+}
+#logo {
+    font-family: 'lato';
+    font-size: 130px;
+    color: white;
+    display: inline;
+    transition: color 1s;
+}
+#logo:hover {
+    color: rgb(221, 255, 0);
+}
+#languagesDescription{
+    color: white;
+    font-family: 'lato';
+    font-size: 40px;
+    color: white;
+    display: inline;
+}
+.languageLogo {
+    height: 120px;
+    width: 120px;
+    margin-left: 50px;
+    float: left;
+}
+.socialLogo{
+    height: 70px;
+    width: 70px;
+    margin-top: 50px;
+    float: top;
+}
