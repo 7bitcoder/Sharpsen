@@ -1,40 +1,27 @@
 import { Component, OnInit } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { trigger, state, style, transition, animate } from '@angular/animations';
+
 declare var VANTA;
 @Component({
   selector: 'app-main-page',
   templateUrl: './main-page.component.html',
   styleUrls: ['./main-page.component.css'],
   animations: [
-    trigger('flyInOut', [
-      state('void', style({ transform: 'translateX(10%)' })),
-      state('*', style({transform: 'translateX(10%)' })),
+    trigger('flyInOutLogo', [
+      state('void', style({ transform: 'translateX(100vw)' })),
+      state('*', style({transform: 'translateX(0vw)' })),
       transition('void <=> *', [
-        animate('1s')
+        animate('1s ease-in-out')
       ])
     ]),
-    trigger('fadeInOut', [
-      state('void', style({ opacity: '0' })),
-      state('*', style({opacity: '1' })),
+    trigger('flyInOutLanguages', [
+      state('void', style({ transform: 'translateX(100vw)' })),
+      state('*', style({transform: 'translateX(0vw)' })),
       transition('void <=> *', [
-        animate('1s')
+        animate('1s 1s ease-in-out')
       ])
-    ]),
-    trigger('simpleFadeAnimation', [
-
-      // the "in" style determines the "resting" state of the element when it is visible.
-      state('in', style({opacity: 1})),
-
-      // fade in when created. this could also be written as transition('void => *')
-      transition(':enter', [
-        style({opacity: 0}),
-        animate(600 )
-      ]),
-
-      // fade out when destroyed. this could also be written as transition('void => *')
-      transition(':leave',
-        animate(600, style({opacity: 0})))
     ])
   ]
 })

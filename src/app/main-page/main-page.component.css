@@ -38,10 +38,6 @@ a:hover
     transition: color 0.5s;
 }
 
-.menuItem:hover{
-    color: rgb(221, 255, 0);
-}
-
 #mainPage{
     float: left;
     position: static;
@@ -51,10 +47,6 @@ a:hover
 #leftSide{
     float: left;
     width: 90vw;
-}
-#rightSide{
-    width: 10vw;
-    float: left;
 }
 #logoContainer{
     margin-top: 20vh;
@@ -68,9 +60,6 @@ a:hover
     display: inline;
     transition: color 1s;
 }
-#logo:hover {
-    color: rgb(221, 255, 0);
-}
 #languagesDescription{
     color: white;
     font-family: 'lato';
@@ -83,10 +72,4 @@ a:hover
     width: 120px;
     margin-left: 50px;
     float: left;
-}
-.socialLogo{
-    height: 70px;
-    width: 70px;
-    margin-top: 50px;
-    float: top;
 }

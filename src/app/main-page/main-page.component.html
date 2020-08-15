@@ -13,11 +13,11 @@
     </div>
     <div id="mainPage">
         <div id="leftSide">
-            <div id="logoContainer">
-                <div @flyInOut @fadeInOut id="logo">Shrapsen</div>
+            <div @flyInOutLogo id="logoContainer">
+                <div id="logo">Shrapsen</div>
             </div>
-            <div style="margin-top: 15vh; margin-left: 2vw;">
-                <div [@simpleFadeAnimation]="'in'" id="languagesDescription">Languages that i use:</div>
+            <div @flyInOutLanguages style="margin-top: 15vh; margin-left: 2vw;">
+                <div id="languagesDescription">Languages that i use:</div>
                 <div style="clear: both;"></div>
                 <div style="margin-top: 5vh; margin-left: -50px;">
                     <img class="languageLogo" src="../assets/images/cSharpLogo.png">
@@ -26,13 +26,6 @@
                     <img class="languageLogo" src="../assets/images/cppLogo3.png">
                     <img class="languageLogo" src="../assets/images/jsLogo.png">
                 </div>
-            </div>
-        </div>
-        <div id="rightSide">
-            <div style="margin-top: 10vh">
-                <img class="socialLogo" src="../assets/images/githubLogo.png">
-                <img class="socialLogo" src="../assets/images/lkLogo.png">
-                <img class="socialLogo" src="../assets/images/ytLogo.png">
             </div>
         </div>
     </div>

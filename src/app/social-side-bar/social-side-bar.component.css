@@ -1,0 +1,45 @@
+#sbTriggerContainer{
+    height: 80px; /* Full-height: remove this if you want "auto" height */
+    width: 20px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 45vh; /* Stay at the top */
+    right: 0;
+    background-color: white; /* Black */
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+}
+#sbTrigger{
+    font-family: 'lato';
+    font-size: 15px;
+    color: black;
+    text-align: center;
+    transform: rotate(90deg);
+}
+#socialBar{
+    height: auto; /* Full-height: remove this if you want "auto" height */
+    width: 100px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 40vh; /* Stay at the top */
+    right: 0;
+    background-color: white; /* Black */
+    border-radius: 25px;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+}
+
+.socialLogo{
+    height: 80px;
+    width: 80px;
+    margin-top: 20px;
+    margin-left: 10px;
+    float: top;
+    transition: transform .2s
+}
+.socialLogo:hover {
+    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+ }
+
