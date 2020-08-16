@@ -5,19 +5,28 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MainPageComponent } from './main-page/main-page.component';
 import { SocialSideBarComponent } from './social-side-bar/social-side-bar.component';
+import { PresentationComponent } from './presentation/presentation.component';
+import { ParallaxDirective } from './parallax.directive';
+import { PresentationElementComponent } from './presentation-element/presentation-element.component';
+import { HttpClientModule } from '@angular/common/http'
+import { ProjectsService } from './projects.service'
 
 @NgModule({
   declarations: [
     AppComponent,
     MainPageComponent,
-    SocialSideBarComponent
+    SocialSideBarComponent,
+    PresentationComponent,
+    ParallaxDirective,
+    PresentationElementComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [ProjectsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,0 +1,17 @@
+#presentationBck{
+    background-color: #a6c280;
+    position: absolute;
+    top: 100vh;
+    left: 0;
+}
+#myProjectsContainer{
+    margin-top: 40vh;
+    margin-left: 10vw;
+    display: block;
+}
+#myProjects{
+    font-family: 'lato';
+    font-size: 130px;
+    color: white;
+    display: inline;
+}

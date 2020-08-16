@@ -6,17 +6,30 @@
   font-family: lato;
   src: url(../../assets/fonts/Lato-Regular.ttf) format("opentype");
 }
+html {
+  scroll-behavior: smooth;
+}
 a {
   text-decoration: none;
 }
-
 a:hover 
 {
    text-decoration:none; 
    cursor:pointer;  
 }
+#backgroundColour{
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  min-width: 500px;
+  width: 100vw;
+  height: 100vh;
+  background-color: #222222;
+}
 #background {
-  position: absolute;
+  position: fixed;
+  z-index: -1;
   top: 0;
   left: 0;
   width: 100vw;
@@ -24,12 +37,14 @@ a:hover
 }
 #menu{
   padding-top: 2vh;
-  position: static;
+  position: fixed;
+  z-index: 1;
   height: 6vh;
   width: 100vw;
   /*background-color:rgb(221, 255, 0);*/
 }
 .menuItem{
+    z-index: 1;
     color: white;
     font-family: 'lato';
     font-size: 30px;
@@ -40,7 +55,7 @@ a:hover
 
 #mainPage{
     float: left;
-    position: static;
+    position: fixed;
     height: 92vh;
     width: 100vw;
 }
@@ -58,8 +73,8 @@ a:hover
     font-size: 130px;
     color: white;
     display: inline;
-    transition: color 1s;
 }
+
 #languagesDescription{
     color: white;
     font-family: 'lato';

@@ -1,0 +1,16 @@
+[
+    {
+        "id" : 1,
+        "name": "LaunchBox",
+        "description": "LaunchBox is free game launcher, actually its a small system witch 'Patcher', so you can create new game patches and releases them, client launcher will update games remotelly. LaunchBox is also self updating when i will release new wersion it will automatically update on aplication startup. Main problems are solved such as version checking, rea….",
+        "imageLink": "https://media.giphy.com/media/XDoXCIOm2zEtiuyNzo/giphy.gif",
+        "githubLink": "https://github.com/sylwow/LaunchBox"
+    },
+    {
+        "id" : 2,
+        "name": "Sylio",
+        "description": "sssssssssssssssssss",
+        "imageLink": "https://www.talkwalker.com/images/2020/blog-headers/image-analysis.png",
+        "githubLink": ""
+    }
+]

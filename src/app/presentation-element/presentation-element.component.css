@@ -1,0 +1,48 @@
+#elBackground{
+    float: left;
+    width: 100vw;
+    height: 100vh;
+}
+#elBacgroundBar {
+    float: left;
+    background-color: #555555;
+    width: 100vw;
+    height: 80vh;
+    margin-top: 10vh;
+}
+#element{
+    position: absolute;
+    height: 70vh;
+    width: auto;
+    margin-left: 5vw;
+    margin-top: 15vh;
+}
+#presentationImg{
+    float: left;
+    width: auto;
+    height: 50vh;
+    margin-top: 10vh;
+}
+#description {
+    overflow: hidden;
+    float: left;
+    height: 70vh;
+    max-width: 40vw;
+    margin-left: 5vw;
+
+}
+#title{
+    font-size: 50px;
+    font-family: 'lato';
+    color: white;
+}
+#descriptionText{
+    height: auto;
+    max-width: 40vw;
+    margin-top: 40px;
+    text-align: justify;
+    word-wrap: break-word;
+    font-size: 20px;
+    font-family: 'lato';
+    color: white;
+}

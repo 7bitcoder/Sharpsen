@@ -1,0 +1,18 @@
+<div id="elBackground">
+    <div [@backgroundIn]="animatePage ? 'show' : '*'" id="elBacgroundBar">
+    </div>
+    <div [@imageIn]="animatePage ? 'show' : '*'" id="element">
+        <img  id="presentationImg" [src]='imageLink'>
+        <div [@TextIn]="animatePage ? 'show' : '*'" id="description">
+            <div id="title">
+                {{title}}
+            </div>
+            <div id="descriptionText">
+                {{description}}
+            </div>
+            <div id="links">
+                links
+            </div>
+        </div>
+    </div>
+</div>

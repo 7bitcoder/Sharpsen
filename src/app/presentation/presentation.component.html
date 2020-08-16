@@ -1,0 +1,16 @@
+<div id="presentationBck">
+    <div style="float: left; height: 100vh; width: 100vw; min-width: 500px;">
+        <div  [@flyInOut] = "show ? 'show' : '*'" id="myProjectsContainer">
+            <div id="myProjects">my projects</div>
+        </div>
+    </div>
+    <div *ngFor="let project of projects">
+        <app-presentation-element 
+        [id]="project.id"
+        [title]="project.name"
+        [description]="project.description"
+        [imageLink]="project.imageLink"
+        [githubLink]="project.githubLink">
+        </app-presentation-element>
+    </div>
+</div>
