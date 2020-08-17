@@ -3,5 +3,7 @@ export interface project {
     name: string,
     description: string,
     imageLink: string,
-    githubLink: string
+    githubLink: string,
+    requirements: string,
+    tools: string[],
 }

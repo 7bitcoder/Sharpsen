@@ -8,29 +8,29 @@ import { trigger, state, style, transition, animate, query, stagger, sequence } 
   animations: [
     trigger('backgroundIn', [
       state('void', style({ transform: 'translateX(-100vw)' })),
-      state('*', style({transform: 'translateX(-100vw)' })),
-      state('show', style({transform: 'translateX(0vw) skewX(0deg)'})),
-      transition('* <=> show', 
+      state('*', style({ transform: 'translateX(-100vw)' })),
+      state('show', style({ transform: 'translateX(0vw) skewX(0deg)' })),
+      transition('* <=> show',
         sequence([
-          animate('0.25s ease-in', style({transform: 'translateX(-50vw) skewX(40deg)'})),
-          animate('0.25s ease-out', style({transform: 'translateX(0vw) skewX(0deg)'}))
+          animate('0.25s ease-in', style({ transform: 'translateX(-50vw) skewX(40deg)' })),
+          animate('0.25s ease-out', style({ transform: 'translateX(0vw) skewX(0deg)' }))
         ])
       ),
     ]),
     trigger('imageIn', [
       state('void', style({ transform: 'translateX(-100vw)' })),
       state('*', style({ transform: 'translateX(-100vw)' })),
-      state('show', style({ transform: 'translateX(0vw)'})),
-      transition('* <=> show', 
+      state('show', style({ transform: 'translateX(0vw)' })),
+      transition('* <=> show',
         animate('0.5s 0.5s ease-in-out'),
       )
     ]),
-    trigger('TextIn', [
-      state('void', style({ transform: 'translateY(-100vw)' })),
-      state('*', style({ transform: 'translateY(-100vw)' })),
-      state('show', style({ transform: 'translateY(0vw)'})),
-      transition('* <=> show', 
-        animate('0.5s 1s ease-in-out'),
+    trigger('textIn', [
+      state('void', style({ opacity: 0 })),
+      state('*', style({ opacity: 0 })),
+      state('show', style({ opacity: 1 })),
+      transition('* <=> show',
+        animate('0.5s 0.5s ease-in-out'),
       )
     ])
   ]
@@ -42,6 +42,9 @@ export class PresentationElementComponent implements OnInit {
   @Input() id: number;
   @Input() imageLink: string;
   @Input() githubLink: string;
+  @Input() index: number;
+  @Input() toolsImg: string[];
+  @Input() requirements: string;
 
   public animatePage = false;
 
@@ -49,8 +52,8 @@ export class PresentationElementComponent implements OnInit {
 
   @HostListener('window:scroll', ['$event'])
   checkScroll() {
-    if(!this.animatePage){
-      const componentPosition = this.el.nativeElement.offsetTop + (window.innerHeight*this.id) + window.innerHeight/2
+    if (!this.animatePage) {
+      const componentPosition = this.el.nativeElement.offsetTop + window.innerHeight * (this.index + 1.9)
       const scrollPosition = window.pageYOffset
 
       if (scrollPosition >= componentPosition) {

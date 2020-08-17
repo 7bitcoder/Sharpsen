@@ -10,8 +10,8 @@ import { ProjectsService } from '../projects.service';
   animations: [
     trigger('flyInOut', [
       state('void', style({ transform: 'translateX(100vw)' })),
-      state('*', style({transform: 'translateX(100vw)' })),
-      state('show', style({transform: 'translateX(0vw)' })),
+      state('*', style({ transform: 'translateX(100vw)' })),
+      state('show', style({ transform: 'translateX(0vw)' })),
       transition('* <=> show', [
         animate('0.5s ease-in-out')
       ])
@@ -22,24 +22,24 @@ export class PresentationComponent implements OnInit {
 
   show = false;
   public projects = [];
-  constructor(public el: ElementRef, private projectsService: ProjectsService) { 
+  constructor(public el: ElementRef, private projectsService: ProjectsService) {
   }
 
   @HostListener('window:scroll', ['$event'])
-    checkScroll() {
-      if(!this.show){
-        const componentPosition = this.el.nativeElement.offsetTop + window.innerHeight
-        const scrollPosition = window.pageYOffset
+  checkScroll() {
+    if (!this.show) {
+      const componentPosition = this.el.nativeElement.offsetTop + window.innerHeight
+      const scrollPosition = window.pageYOffset
 
-        if (scrollPosition >= componentPosition) {
-          this.show = true;
-          console.log(this.show)
-        }
+      if (scrollPosition >= componentPosition) {
+        this.show = true;
+        console.log(this.show)
       }
     }
+  }
 
   ngOnInit(): void {
-    this.projectsService.getProjects().subscribe(data => this.projects = data)    
+    this.projectsService.getProjects().subscribe(data => this.projects = data)
   }
 
 }

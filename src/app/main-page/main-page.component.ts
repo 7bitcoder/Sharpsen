@@ -11,14 +11,14 @@ declare var VANTA;
   animations: [
     trigger('flyInOutLogo', [
       state('void', style({ transform: 'translateX(100vw)' })),
-      state('*', style({transform: 'translateX(0vw)' })),
+      state('*', style({ transform: 'translateX(0vw)' })),
       transition('void <=> *', [
         animate('1s ease-in-out')
       ])
     ]),
     trigger('flyInOutLanguages', [
       state('void', style({ transform: 'translateX(100vw)' })),
-      state('*', style({transform: 'translateX(0vw)' })),
+      state('*', style({ transform: 'translateX(0vw)' })),
       transition('void <=> *', [
         animate('1s 1s ease-in-out')
       ])
@@ -30,7 +30,7 @@ export class MainPageComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-      
+
     VANTA.NET({
       el: "#background",
       mouseControls: true,
