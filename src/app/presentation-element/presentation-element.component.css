@@ -46,6 +46,10 @@
     height: 100%;
     margin-right: 10px;
     float: left;
+    transition: transform .15s
+}
+.toolLogo{
+    transform: translateY(10px);
 }
 #descriptionText{
     float: left;

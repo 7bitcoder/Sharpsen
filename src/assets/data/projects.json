@@ -7,11 +7,9 @@
         "githubLink": "https://github.com/sylwow/LaunchBox",
         "requirements": "ffffffffffffffffffffffffff",
         "tools": [
+            "../assets/images/c++logo.png",
             "../assets/images/cSharpLogo.png",
-            "../assets/images/cSharpLogo.png",
-            "../assets/images/cSharpLogo.png",
-            "../assets/images/cSharpLogo.png",
-            "../assets/images/cSharpLogo.png"
+            "../assets/images/qtLogo.png"
         ]
     },
     {
