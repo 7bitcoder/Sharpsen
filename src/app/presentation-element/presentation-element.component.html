@@ -8,7 +8,8 @@
                 {{title}}
             </div>
             <div id="tools">
-                <img *ngFor="let tool of toolsImg; index as i" class="toolLogo" [src]="tool">
+                <img *ngFor="let tool of toolsImg; index as i" class="toolLogo" [src]="tool.img"
+                    [title]="tool.description">
             </div>
             <div id="descriptionText">
                 {{description}}
@@ -19,7 +20,7 @@
             <div id="links">
                 <a *ngIf="githubLink.length > 0" target="_blank" rel="noopener noreferrer" [href]="githubLink">
                     <img id="gitLink" src="../assets/images/githubLogo.png"></a>
-                <div id="downloads">downloads</div>
+                <button class="btn"><i class="fa fa-download"></i> Downloads</button>
             </div>
         </div>
     </div>

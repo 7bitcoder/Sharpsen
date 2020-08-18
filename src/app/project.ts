@@ -5,5 +5,5 @@ export interface project {
     imageLink: string,
     githubLink: string,
     requirements: string,
-    tools: string[],
+    tools: { decription: string, img: string }[],
 }
