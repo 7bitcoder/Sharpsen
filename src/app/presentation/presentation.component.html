@@ -6,8 +6,8 @@
     </div>
     <div *ngFor="let project of projects; index as i">
         <app-presentation-element [id]="project.id" [title]="project.name" [description]="project.description"
-            [imageLink]="project.imageLink" [githubLink]="project.githubLink" [index]="i" [toolsImg]="project.tools"
-            [requirements]=project.requirements>
+            [imageLink]="project.imageLink" [githubLink]="project.githubLink" [index]="i"
+            [downloads]="project.downloads" [toolsImg]="project.tools" [requirements]=project.requirements>
         </app-presentation-element>
     </div>
 </div>

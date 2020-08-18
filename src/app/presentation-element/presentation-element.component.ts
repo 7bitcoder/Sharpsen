@@ -43,7 +43,8 @@ export class PresentationElementComponent implements OnInit {
   @Input() imageLink: string;
   @Input() githubLink: string;
   @Input() index: number;
-  @Input() toolsImg: string[];
+  @Input() downloads: { platform: string, link: string }[];
+  @Input() toolsImg: { decription: string, img: string }[];
   @Input() requirements: string;
 
   public animatePage = false;
