@@ -1,48 +1,19 @@
-a {
-  text-decoration: none;
-}
-a:hover 
-{
-   text-decoration:none; 
-   cursor:pointer;  
-}
 #Ebackground {
     float: left;
-    z-index: -1;
     width: 100vw;
     height: 100vh;
 }
-#EmainPage {
-    float: left;
-    position: fixed;
-    height: 92vh;
-    width: 100vw;
-}
-#EleftSide{
-    float: left;
-    width: 90vw;
-}
-#ElogoContainer{
-    margin-top: 20vh;
+#endContainer{
+    float:left;
     margin-left: 10vw;
-    display: block;
+    margin-top: 40vh;
 }
-#Elogo {
-    font-family: 'lato';
-    font-size: 130px;
-    color: white;
-    display: block;
-}
-
-#ElanguagesDescription{
-    color: white;
-    font-family: 'lato';
-    font-size: 40px;
-    color: white;
-    display: inline;
-}
-.ElanguageLogo {
-    height: 120px;
-    margin-left: 50px;
+.end{
     float: left;
+    width: 100%;
+    margin-top: 30px;
+    color: white;
+    font-family: 'lato';
+    font-size: 60px;
+    color: white;
 }

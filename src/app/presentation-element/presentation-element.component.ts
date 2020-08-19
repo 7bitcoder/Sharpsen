@@ -1,5 +1,6 @@
 import { Component, OnInit, Input, HostBinding, HostListener, ElementRef } from '@angular/core';
 import { trigger, state, style, transition, animate, query, stagger, sequence } from '@angular/animations';
+import disableScroll from 'disable-scroll';
 
 @Component({
   selector: 'app-presentation-element',
@@ -51,15 +52,18 @@ export class PresentationElementComponent implements OnInit {
 
   constructor(public el: ElementRef) { }
 
+  animationDone($event) {
+    disableScroll.off();
+  }
+
   @HostListener('window:scroll', ['$event'])
   checkScroll() {
     if (!this.animatePage) {
-      const componentPosition = this.el.nativeElement.offsetTop + window.innerHeight * (this.index + 1.9)
+      const componentPosition = this.el.nativeElement.offsetTop + window.innerHeight * 0.7 //* (this.index + 1.9)
       const scrollPosition = window.pageYOffset
 
       if (scrollPosition >= componentPosition) {
         this.animatePage = true;
-        console.log(componentPosition)
       }
     }
   }

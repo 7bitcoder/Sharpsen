@@ -14,7 +14,7 @@ export class EndingPageComponent implements OnInit {
   ngOnInit(): void {
 
     VANTA.NET({
-      el: "#background",
+      el: "#Ebackground",
       mouseControls: true,
       touchControls: true,
       gyroControls: false,
