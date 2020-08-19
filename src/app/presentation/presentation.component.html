@@ -4,11 +4,11 @@
             <div id="myProjects">my projects</div>
         </div>
     </div>
-    <div *ngFor="let project of projects; index as i">
+    <div *ngFor="let project of projects; index as i" style="float: left;">
         <app-presentation-element [id]="project.id" [title]="project.name" [description]="project.description"
             [imageLink]="project.imageLink" [githubLink]="project.githubLink" [index]="i"
             [downloads]="project.downloads" [toolsImg]="project.tools" [requirements]=project.requirements>
         </app-presentation-element>
     </div>
-    <div id="endingPage">made by Sylwester Dawida Sylwo1003@gmail.com</div>
+    <app-ending-page style="float: left;"></app-ending-page>
 </div>

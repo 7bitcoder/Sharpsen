@@ -9,7 +9,8 @@ import { PresentationComponent } from './presentation/presentation.component';
 import { ParallaxDirective } from './parallax.directive';
 import { PresentationElementComponent } from './presentation-element/presentation-element.component';
 import { HttpClientModule } from '@angular/common/http'
-import { ProjectsService } from './projects.service'
+import { ProjectsService } from './projects.service';
+import { EndingPageComponent } from './ending-page/ending-page.component'
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ProjectsService } from './projects.service'
     SocialSideBarComponent,
     PresentationComponent,
     ParallaxDirective,
-    PresentationElementComponent
+    PresentationElementComponent,
+    EndingPageComponent
   ],
   imports: [
     BrowserModule,
