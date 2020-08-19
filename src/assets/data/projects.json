@@ -38,16 +38,11 @@
     {
         "id": 2,
         "name": "Engineering-Thesis",
-        "description": "Using deep neural networks to recognize hand gestures to control a mobile robot using a camera. Mobile robot control system, using gestures. System contains deep neural network to classify gesture captured by camera, comunication module (bluetooth 4.0 low energy) and Arlo - mobile robot (programable in C language)",
+        "description": "The purpose of this project was to build a system that allows user to control the Arlo mobile robot using static hand gestures, with use of camera. The project consists of three parts, the first was to develop script in Python that supposed to recognize the gestures controlling the robot. For this purpose I used convolutional neural network (pytorch library), which had to be properly trained. The next step was to create a robot program in C++ language that had to properly react to application commands. The last step was to handle communication between programs, Bluetooth 4.0 Low Energy standard was used for this purpose. Unfortunately, during the final control test Bluetooth module has been damaged, in this case the author decided to use simple serial communication instead. The main assumptions of the project were to achieve real-time processing system and achieve high accuracy of hand gesture recognition. More informations on my github site",
         "imageLink": "https://media.giphy.com/media/LNkTEJLvYglDymOG1S/giphy.gif",
         "githubLink": "https://github.com/sylwow/Engineering-Thesis",
-        "requirements": "Released only on windows",
-        "downloads": [
-            {
-                "platform": "win|linux|mac",
-                "link": ""
-            }
-        ],
+        "requirements": "",
+        "downloads": [],
         "tools": [
             {
                 "description": "Python Language",
@@ -78,10 +73,10 @@
     {
         "id": 3,
         "name": "MacroFlow",
-        "description": "Macro flow is a simple tool to create macros, due to simplicity you can create macros very quickly, each of them consists of simple commands described in lower chapters. You can assign a keyboard shortcut to the macro, and when you switch program to listening state, MacroFlow will wait for you to trigger the macro with the right hotkey, when same keyboard shortcut is pressed while macro is under execution, script is terminated. The number of macros the program can listen to is unlimited.",
+        "description": "Macro flow is a simple tool to create macros. Macro is a txt file that contains instructions/commands each of them are described on my github site. For exmple you can write macro to move mouse on top of the screen and white some text by keyboard, macros can have simple controll flow instructions (if, while), variables, and arithetic (+,-,/,*). Due to simplicity you can create macros very quickly. You can assign a keyboard shortcut to the macro, and when you switch program to listening state, MacroFlow will wait for you to trigger the macro with the right hotkey, when same keyboard shortcut is pressed while macro is under execution, script is terminated. The number of macros the program can listen to is unlimited. Program is written in java witch javafx gui library",
         "imageLink": "https://raw.githubusercontent.com/sylwow/MacroFLow/master/screenShots/main.PNG",
         "githubLink": "https://github.com/sylwow/MacroFLow",
-        "requirements": "Released only on windows",
+        "requirements": "Program requires to have build in java runtime environmet javafx library",
         "downloads": [
             {
                 "platform": "win|linux|mac",
@@ -106,10 +101,10 @@
     {
         "id": 4,
         "name": "Sylio",
-        "description": "Sylio is simple multiplayer game, players controls snail and tries to survive as long as it is possible, using various powerups and collecting points. In game you can change music settings choose your nickname, controls and change number of rounds.",
+        "description": "Sylio is simple multiplayer desktop game written in C++/Sfml, players controls snail and tries to survive as long as it is possible, using various powerups and collecting points. In game you can change music settings choose your nickname, controls and change number of rounds.",
         "imageLink": "https://media.giphy.com/media/IzXdG4zJlQsWH2DKbI/giphy.gif",
         "githubLink": "https://github.com/sylwow/Sylio",
-        "requirements": "Released only on windows",
+        "requirements": "Released only on Windows 32 bit",
         "downloads": [
             {
                 "platform": "win",
@@ -134,10 +129,10 @@
     {
         "id": 5,
         "name": "Cards-against-the-world",
-        "description": "Online card game for up to eight players in one party. The game is simple. Each round, one player asks a question from a black card, and everyone else answers with their funniest white card.",
+        "description": "Online card game for up to eight players in one party. The game is simple. Each round, one player asks a question from a black card, and everyone else answers with their funniest white card using for voice communicator eg discord. Desktop aplication is build with c++/sfml and connects with c++/winsocket server. Backend is multithread server, each thread represend game lobby and handles things like game states, executing commands, exchanging data between players, checking if players are still connected etc. Each lobby has it own thread which handles unicode game chat. Server is simply secured you need to send specific code to get access. To run server code i used Amazon AWS it provides free cloud computing, within you can set up small windows server. Currently there is only one deck available \"Talia Rocka PL\"",
         "imageLink": "https://media.giphy.com/media/IzXdG4zJlQsWH2DKbI/giphy.gif",
         "githubLink": "https://github.com/sylwow/Cards-against-the-world",
-        "requirements": "Released only on windows",
+        "requirements": "Released only on Windows 32 bit",
         "downloads": [
             {
                 "platform": "win",
@@ -162,7 +157,7 @@
     {
         "id": 5,
         "name": "CloudNote",
-        "description": "This project is currently in development, its asdddddddddddddddddddsssssssssss",
+        "description": "This project is currently under development, its asdddddddddddddddddddsssssssssss",
         "imageLink": "https://media.giphy.com/media/IzXdG4zJlQsWH2DKbI/giphy.gif",
         "githubLink": "https://github.com/sylwow/Cards-against-the-world",
         "requirements": "fffffffffffffff",

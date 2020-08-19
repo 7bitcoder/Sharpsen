@@ -20,7 +20,7 @@
             <div id="descriptionText">
                 {{description}}
             </div>
-            <div id="requirements">
+            <div *ngIf="requirements.length > 0" id="requirements">
                 {{requirements}}
             </div>
             <div id="links">
