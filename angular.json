@@ -27,8 +27,8 @@
               "src/styles.css"
             ],
             "scripts": [              
-              "../node_modules/vanta/vendor/three.r119.min.js",
-              "../node_modules/vanta/dist/vanta.net.min.js"
+              "node_modules/vanta/vendor/three.r119.min.js",
+              "node_modules/vanta/dist/vanta.net.min.js"
             ]
           },
           "configurations": {
