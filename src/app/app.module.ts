@@ -11,7 +11,6 @@ import { PresentationElementComponent } from './presentation-element/presentatio
 import { HttpClientModule } from '@angular/common/http'
 import { ProjectsService } from './projects.service';
 import { EndingPageComponent } from './ending-page/ending-page.component'
-import disableScroll from 'disable-scroll';
 
 @NgModule({
   declarations: [
