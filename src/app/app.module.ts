@@ -11,6 +11,12 @@ import { PresentationElementComponent } from './presentation-element/presentatio
 import { HttpClientModule } from '@angular/common/http'
 import { ProjectsService } from './projects.service';
 import { EndingPageComponent } from './ending-page/ending-page.component'
+import { environment } from './../environments/environment'
+// 1. Import the libs you need
+import { AngularFireModule } from '@angular/fire';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { AngularFireStorageModule } from '@angular/fire/storage';
+import { AngularFireAuthModule } from '@angular/fire/auth';
 
 @NgModule({
   declarations: [
@@ -23,6 +29,10 @@ import { EndingPageComponent } from './ending-page/ending-page.component'
     EndingPageComponent
   ],
   imports: [
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFirestoreModule, // firestore
+    AngularFireAuthModule, // auth
+    AngularFireStorageModule, // storage
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,

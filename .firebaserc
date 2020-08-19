@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "sharpsen-15ade": {
+      "hosting": {
+        "shrapsen": [
+          "sharpsen-15ade"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "sharpsen-15ade"
+  }
+}
