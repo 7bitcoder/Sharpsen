@@ -2,7 +2,7 @@
     height: 80px; /* Full-height: remove this if you want "auto" height */
     width: 20px; /* Set the width of the sidebar */
     position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-    z-index: 1; /* Stay on top */
+    z-index: 3; /* Stay on top */
     top: 45vh; /* Stay at the top */
     right: 0;
     background-color: white; /* Black */
@@ -13,7 +13,7 @@
 }
 #sbTrigger{
     font-family: 'lato';
-    font-size: 15px;
+    font-size: 2vh;
     color: black;
     text-align: center;
     transform: rotate(90deg);

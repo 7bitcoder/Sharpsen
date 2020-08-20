@@ -1,41 +1,40 @@
 <div id="elBackground">
     <div [@backgroundIn]="animatePage ? 'show' : '*'" id="elBacgroundBar">
-    </div>
-    <div id="element">
-        <div [@imageIn]="animatePage ? 'show' : '*'" id="presentationImg">
-            <iframe [@imageIn]="animatePage ? 'show' : '*'" width="100%" height="100%"
-                src="https://www.youtube.com/embed/veHqJSC-9Lo" frameborder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-        </div>
-        <!---<img [@imageIn]="animatePage ? 'show' : '*'" id="presentationImg" [src]='imageLink'>--->
-        <div [@textIn]="animatePage  ? 'show' : '*'" id="description">
-            <div id="title">
-                {{title}}
+        <div id="element">
+            <div [@imageIn]="animatePage ? 'show' : '*'" id="presentationImg">
+                <video width="100%" height="100%" [autoplay]="autoplayVideo" loop="true" controls muted="true">
+                    <source [src]="imageLink" type="video/mp4">
+                </video>
             </div>
-            <div id="tools">
-                <img *ngFor="let tool of toolsImg; index as i" class="toolLogo" [src]="tool.img"
-                    [title]="tool.description">
-            </div>
-            <div id="descriptionText">
-                {{description}}
-            </div>
-            <div *ngIf="requirements.length > 0" id="requirements">
-                {{requirements}}
-            </div>
-            <div id="links">
-                <a *ngIf="githubLink.length > 0" target="_blank" rel="noopener noreferrer" [href]="githubLink">
-                    <img id="gitLink" src="../assets/images/githubLogo.png"></a>
-                <a *ngFor="let download of downloads;" [href]="download.link" download>
-                    <button class="btn">
-                        <img *ngIf="download.platform.includes('win')" class="downloadIcon"
-                            src="../assets/images/winLogo.png">
-                        <img *ngIf="download.platform.includes('linux')" class="downloadIcon"
-                            src="../assets/images/linuxLogo.png">
-                        <img *ngIf="download.platform.includes('mac')" class="downloadIcon"
-                            src="../assets/images/macLogo.png">
-                        <div style="float: left; margin-left: 5px;"> Download</div>
-                    </button> </a>
+            <!---<img [@imageIn]="animatePage ? 'show' : '*'" id="presentationImg" [src]='imageLink'>--->
+            <div [@textIn]="animatePage  ? 'show' : '*'" id="description">
+                <div id="title">
+                    {{title}}
+                </div>
+                <div id="tools">
+                    <img *ngFor="let tool of toolsImg; index as i" class="toolLogo" [src]="tool.img"
+                        [title]="tool.description">
+                </div>
+                <div id="descriptionText">
+                    {{description}}
+                </div>
+                <div *ngIf="requirements.length > 0" id="requirements">
+                    {{requirements}}
+                </div>
+                <div id="links">
+                    <a *ngIf="githubLink.length > 0" target="_blank" rel="noopener noreferrer" [href]="githubLink">
+                        <img id="gitLink" src="../assets/images/githubLogo.png"></a>
+                    <a *ngFor="let download of downloads;" [href]="download.link" download>
+                        <button class="btn">
+                            <img *ngIf="download.platform.includes('win')" class="downloadIcon"
+                                src="../assets/images/winLogo.png">
+                            <img *ngIf="download.platform.includes('linux')" class="downloadIcon"
+                                src="../assets/images/linuxLogo.png">
+                            <img *ngIf="download.platform.includes('mac')" class="downloadIcon"
+                                src="../assets/images/macLogo.png">
+                            <div style="float: left; margin-left: 7px;"> Download</div>
+                        </button> </a>
+                </div>
             </div>
         </div>
     </div>

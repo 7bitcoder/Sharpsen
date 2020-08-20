@@ -1,19 +1,19 @@
 #Ebackground {
     float: left;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
 }
 #endContainer{
     float:left;
-    margin-left: 10vw;
+    margin-left: 10%;
     margin-top: 40vh;
 }
 .end{
     float: left;
     width: 100%;
-    margin-top: 30px;
+    margin-top: 5vh;
     color: white;
     font-family: 'lato';
-    font-size: 60px;
+    font-size: 10vh;
     color: white;
 }

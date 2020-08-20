@@ -1,25 +1,43 @@
+.video-js .vjs-tech {
+    /* make the video larger so it can hide*/
+    width: 102%;
+    height: 102%;
+    /* displace video to hide*/
+    left: -5px;
+    /* allow space for hiding*/
+    margin: -10px;
+    position: absolute;
+    top: 0;
+  }
+  
+  .video-js {
+    /* make sure overflow is hidden*/
+    overflow: hidden; 
+  }
 #elBackground{
     float: left;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
 }
 #elBacgroundBar {
+    z-index: 1;
     float: left;
     background-color: #555555;
-    width: 100vw;
-    height: 80vh;
+    width: 100%;
+    height: 85vh;
     margin-top: 10vh;
 }
 #element{
-    position: absolute;
-    height: 70vh;
-    width: auto;
-    margin-left: 5vw;
-    margin-top: 15vh;
-}
-#presentationImg{
+    z-index: 2;
     float: left;
-    width: 40vw;
+    height: 70vh;
+    width: 100%;
+    margin-top: 5vh;
+}
+#presentationImg {
+    float: left;
+    margin-left: 5%;
+    width: 43%;
     height: 50vh;
     margin-top: 10vh;
 }
@@ -27,24 +45,24 @@
     overflow: hidden;
     float: left;
     height: 70vh;
-    max-width: 40vw;
-    margin-left: 5vw;
-
+    margin-left: 4%;
+    width: 43%;
 }
 #title{
-    font-size: 50px;
+    width: 100%;
+    font-size: 5vh;
     font-family: 'lato';
     color: white;
 }
 #tools{
     float: left;
-    height: 60px;
+    height: 7vh;
     width: 100%;
-    margin-top: 10px;
+    margin-top: 1vh;
 }
 .toolLogo{
-    height: 60px;
-    margin-right: 15px;
+    height: 7vh;
+    margin-right: 2%;
     float: left;
     transition: transform .15s
 }
@@ -53,40 +71,37 @@
 }
 #descriptionText{
     float: left;
-    margin-top: 20px;
+    margin-top: 2vh;
     height: auto;
-    max-width: 40vw;
     width: 100%;
     text-align: justify;
     word-wrap: break-word;
-    font-size: 20px;
+    font-size: 2vh;
     font-family: 'lato';
     color: white;
 }
 #requirements{
     float: left;
-    margin-top: 20px;
+    margin-top: 2vh;
     height: auto;
     width: 100%;
-    max-width: 40vw;
     text-align: justify;
     word-wrap: break-word;
-    font-size: 20px;
+    font-size: 2vh;
     font-family: 'lato';
     color: white;
 }
 #links{
     float: left;
-    margin-top: 20px;
+    margin-top: 2vh;
     height: auto;
     width: 100%;
-    max-width: 40vw;
 }
 #gitLink{
     float: right;
-    height: 60px;
-    margin-left: 10px;
-    margin-right: 10px;
+    height: 7vh;
+    margin-left: 2%;
+    margin-right: 2%;
     transition: transform .15s
 }
 #gitLink:hover{
@@ -97,19 +112,23 @@
     background-color: DodgerBlue;
     border: none;
     color: white;
-    margin-top: 7px;
-    margin-bottom: 7px;
-    margin-right: 20px;
-    padding: 12px 30px;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    height: 5vh;
+    width: auto;
+    margin-right: 3%;
+    padding-top: 1.1vh;
+    padding-bottom: 1.1vh;
+    padding-right:  3%;
+    padding-left:  3%;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 2.5vh;
   }
   .btn:hover {
     background-color: RoyalBlue;
   }
   .downloadIcon{
       float: left;
-      margin-right: 5px;
-      height: 20px;
+      height: 2.5vh;
   }
   

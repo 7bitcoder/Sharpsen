@@ -9,9 +9,9 @@ import { ProjectsService } from '../projects.service';
   styleUrls: ['./presentation.component.css'],
   animations: [
     trigger('flyInOut', [
-      state('void', style({ transform: 'translateX(100vw)' })),
-      state('*', style({ transform: 'translateX(100vw)' })),
-      state('show', style({ transform: 'translateX(0vw)' })),
+      state('void', style({ opacity: 0 })),
+      state('*', style({ opacity: 0 })),
+      state('show', style({ opacity: 1 })),
       transition('* <=> show', [
         animate('0.5s ease-in-out')
       ])

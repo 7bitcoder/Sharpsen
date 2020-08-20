@@ -46,6 +46,7 @@ export class PresentationElementComponent implements OnInit {
   @Input() downloads: { platform: string, link: string }[];
   @Input() toolsImg: { decription: string, img: string }[];
   @Input() requirements: string;
+  autoplayVideo: string = "false";
 
   public animatePage = false;
 
@@ -59,6 +60,7 @@ export class PresentationElementComponent implements OnInit {
 
       if (scrollPosition >= componentPosition) {
         this.animatePage = true;
+        this.autoplayVideo = "autoplay";
       }
     }
   }

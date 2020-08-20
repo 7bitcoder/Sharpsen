@@ -1,23 +1,21 @@
 #presentationBck{
     background-color: #a6c280;
     position: absolute;
-    top: 100vh;
+    top: max(100vh, 1200px);
     left: 0;
 }
-#myProjectsContainer{
+#myProjects{
+    float: left;
     margin-top: 40vh;
     margin-left: 10vw;
-    display: block;
-}
-#myProjects{
     font-family: 'lato';
-    font-size: 130px;
+    width: auto;
+    font-size: 20vh;
     color: white;
-    display: inline;
 }
 #endingPage {
     float: left;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     background-color: white;
 }
