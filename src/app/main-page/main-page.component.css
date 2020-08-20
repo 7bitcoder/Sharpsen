@@ -22,8 +22,7 @@ a:hover
   z-index: -1;
   top: 0;
   left: 0;
-  min-width: 500px;
-  width: 100vw;
+  width: max(100vw, 500px);
   height: 100vh;
   background-color: #222222;
 }
@@ -32,58 +31,35 @@ a:hover
   z-index: -1;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: max(100vw, 500px);
   height: 100vh;
 }
-#menu{
-  padding-top: 2vh;
-  position: fixed;
-  z-index: 1;
-  height: 6vh;
-  width: 100vw;
-  /*background-color:rgb(221, 255, 0);*/
-}
-.menuItem{
-    z-index: 1;
-    color: white;
-    font-family: 'lato';
-    font-size: 30px;
-    color: white;
-    display: inline;
-    transition: color 0.5s;
-}
-
 #mainPage {
     float: left;
     position: fixed;
-    height: 92vh;
-    width: 100vw;
-}
-#leftSide{
-    float: left;
-    width: 90vw;
-}
-#logoContainer{
-    margin-top: 20vh;
-    margin-left: 10vw;
-    display: block;
+    height: 100%;
+    width: 100%
 }
 #logo {
+    float: left;
+    margin-top: 20vh;
+    margin-left: 10vw;
+    height: 30%;
+    width: 100%;
+    font-size: 20vh;
     font-family: 'lato';
-    font-size: 130px;
     color: white;
-    display: block;
 }
 
 #languagesDescription{
+    float: left;
     color: white;
     font-family: 'lato';
-    font-size: 40px;
+    font-size: 5vh;
     color: white;
-    display: inline;
 }
 .languageLogo {
-    height: 120px;
-    margin-left: 50px;
+    height: 17vh;
+    margin-left: 10px;
     float: left;
 }
