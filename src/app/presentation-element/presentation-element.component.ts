@@ -1,5 +1,5 @@
 import { Component, OnInit, Input, HostBinding, HostListener, ElementRef } from '@angular/core';
-import { trigger, state, style, transition, animate, query, stagger, sequence } from '@angular/animations';
+import { trigger, state, style, transition, animate, query, stagger, sequence, group, animateChild } from '@angular/animations';
 
 @Component({
   selector: 'app-presentation-element',
@@ -11,9 +11,13 @@ import { trigger, state, style, transition, animate, query, stagger, sequence } 
       state('*', style({ transform: 'translateX(-100vw)' })),
       state('show', style({ transform: 'translateX(0vw) skewX(0deg)' })),
       transition('* <=> show',
-        sequence([
-          animate('0.25s ease-in', style({ transform: 'translateX(-50vw) skewX(40deg)' })),
-          animate('0.25s ease-out', style({ transform: 'translateX(0vw) skewX(0deg)' }))
+        group([
+          query('@imageIn', animateChild()),
+          query('@textIn', animateChild()),
+          sequence([
+            animate('0.25s ease-in', style({ transform: 'translateX(-50vw) skewX(40deg)' })),
+            animate('0.25s ease-out', style({ transform: 'translateX(0vw) skewX(0deg)' }))
+          ])
         ])
       ),
     ]),
@@ -30,7 +34,7 @@ import { trigger, state, style, transition, animate, query, stagger, sequence } 
       state('*', style({ opacity: 0 })),
       state('show', style({ opacity: 1 })),
       transition('* <=> show',
-        animate('0.5s 0.5s ease-in-out'),
+        animate('0.5s 1s ease-in-out'),
       )
     ])
   ]
@@ -50,7 +54,7 @@ export class PresentationElementComponent implements OnInit {
 
   public animatePage = false;
 
-  constructor(public el: ElementRef) {}
+  constructor(public el: ElementRef) { }
 
   @HostListener('window:scroll', ['$event'])
   checkScroll() {
