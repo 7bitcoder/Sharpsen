@@ -9,7 +9,7 @@
         "downloads": [
             {
                 "platform": "win",
-                "link": "../../../downloads/LaunchBoxInstaller.exe"
+                "link": "../assets/images/LaunchBoxInstaller.exe"
             }
         ],
         "tools": [
