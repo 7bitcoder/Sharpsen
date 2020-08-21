@@ -91,13 +91,13 @@
     font-family: 'lato';
     color: white;
 }
-#links{
+#links {
     float: left;
     margin-top: 2vh;
     height: auto;
     width: 100%;
 }
-#gitLink{
+#gitLink {
     float: right;
     height: 7vh;
     margin-left: 2%;
@@ -106,6 +106,7 @@
 }
 #gitLink:hover{
     transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    cursor: pointer; 
 }
 .btn {
     float: left;
@@ -126,6 +127,7 @@
   }
   .btn:hover {
     background-color: RoyalBlue;
+    cursor: pointer; 
   }
   .downloadIcon{
       float: left;
