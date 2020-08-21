@@ -1,8 +1,12 @@
 import { Component, OnInit, Input, HostBinding, HostListener, ElementRef, ViewChild, ViewContainerRef } from '@angular/core';
 import { trigger, state, style, transition, animate, query, stagger, sequence, group, animateChild } from '@angular/animations';
 import { DomSanitizer } from '@angular/platform-browser'
-import * as firebase from 'firebase'
-
+import { AngularFireModule } from '@angular/fire';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { AngularFireStorageModule, AngularFireStorage } from '@angular/fire/storage';
+import { AngularFireAuthModule } from '@angular/fire/auth';
+import { environment } from './../../environments/environment'
+import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http'
 @Component({
   selector: 'app-presentation-element',
   templateUrl: './presentation-element.component.html',
@@ -49,6 +53,7 @@ export class PresentationElementComponent implements OnInit {
   @Input() imageLink: string;
   @Input() githubLink: string;
   @Input() index: number;
+  safeUrl: any = "https://www.youtube.com/embed/dQw4w9WgXcQ";
   @Input() downloads: { platform: string, link: string }[];
   @Input() toolsImg: { decription: string, img: string }[];
   @Input() requirements: string;
@@ -56,7 +61,9 @@ export class PresentationElementComponent implements OnInit {
 
   public animatePage = false;
 
-  constructor(public el: ElementRef, private sanitizer: DomSanitizer) { }
+  constructor(public el: ElementRef, private sanitizer: DomSanitizer,private afStorage: AngularFireStorage) {
+    this.sanitizer = sanitizer 
+  }
 
 
   @HostListener('window:scroll', ['$event'])
@@ -72,9 +79,11 @@ export class PresentationElementComponent implements OnInit {
     }
   }
 
-  ngOnInit(): void { }
-
-  getYtLink() {
-    return this.sanitizer.bypassSecurityTrustResourceUrl(this.imageLink);
+  ngOnInit(): void {
+    this.getTrustedUrl(this.imageLink);
   }
+
+  getTrustedUrl(url:any){ 
+    this.safeUrl = this.sanitizer.bypassSecurityTrustResourceUrl(url);
+   }
 }

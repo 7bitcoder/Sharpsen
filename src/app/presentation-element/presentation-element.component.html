@@ -2,9 +2,7 @@
     <div [@backgroundIn]="animatePage ? 'show' : '*'" id="elBacgroundBar">
         <div id="element">
             <div [@imageIn]="animatePage ? 'show' : '*'" id="presentationImg">
-                <iframe width="100%" height="100%" [src]="getYtLink()" frameborder="0"
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
+                <iframe width="100%" height="100% [src]="this.safeUrl" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <!---<img [@imageIn]="animatePage ? 'show' : '*'" id="presentationImg" [src]='imageLink'>--->
             <div [@textIn]="animatePage  ? 'show' : '*'" id="description">
