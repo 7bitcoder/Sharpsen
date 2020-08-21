@@ -1,7 +1,7 @@
 import { Component, OnInit, Input, HostBinding, HostListener, ElementRef, ViewChild, ViewContainerRef } from '@angular/core';
 import { trigger, state, style, transition, animate, query, stagger, sequence, group, animateChild } from '@angular/animations';
 import { DomSanitizer } from '@angular/platform-browser'
-import * as firebase  from 'firebase'
+import * as firebase from 'firebase'
 
 @Component({
   selector: 'app-presentation-element',
@@ -58,7 +58,7 @@ export class PresentationElementComponent implements OnInit {
 
   constructor(public el: ElementRef, private sanitizer: DomSanitizer) { }
 
-  
+
   @HostListener('window:scroll', ['$event'])
   checkScroll() {
     if (!this.animatePage) {
@@ -72,27 +72,9 @@ export class PresentationElementComponent implements OnInit {
     }
   }
 
-  ngOnInit(): void {}
-  
-  getYtLink(){
-    return  this.sanitizer.bypassSecurityTrustResourceUrl(this.imageLink);
-  }
+  ngOnInit(): void { }
 
-  downloadData(index){
-    var storage = firebase.storage();
-    var url = storage.ref(this.downloads[index].link).getDownloadURL().then(function(url) {
-      // `url` is the download URL for 'images/stars.jpg'
-    
-      // This can be downloaded directly:
-      var xhr = new XMLHttpRequest();
-      xhr.responseType = 'blob';
-      xhr.onload = function(event) {
-        var blob = xhr.response;
-      };
-      xhr.open('GET', url);
-      xhr.send();
-    }).catch(function(error) {
-      // Handle any errors
-    });
+  getYtLink() {
+    return this.sanitizer.bypassSecurityTrustResourceUrl(this.imageLink);
   }
 }
