@@ -5,8 +5,9 @@
     <div *ngFor="let project of projects; index as i" style="float: left; width: 100%; height: 100vh;">
         <app-presentation-element [id]="project.id" [title]="project.name" [description]="project.description"
             [imageLink]="project.imageLink" [githubLink]="project.githubLink" [index]="i"
-            [downloads]="project.downloads" [toolsImg]="project.tools" [requirements]="'Requirements: ' + project.requirements">
+            [downloads]="project.downloads" [toolsImg]="project.tools"
+            [requirements]="'Requirements: ' + project.requirements">
         </app-presentation-element>
     </div>
-    <app-ending-page style="float: left;"></app-ending-page>
+    <app-ending-page style="float: left; width: 100%"></app-ending-page>
 </div>
