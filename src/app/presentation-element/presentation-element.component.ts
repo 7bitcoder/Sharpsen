@@ -7,6 +7,7 @@ import { AngularFireStorageModule, AngularFireStorage } from '@angular/fire/stor
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { environment } from './../../environments/environment'
 import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http'
+
 @Component({
   selector: 'app-presentation-element',
   templateUrl: './presentation-element.component.html',
@@ -61,8 +62,8 @@ export class PresentationElementComponent implements OnInit {
 
   public animatePage = false;
 
-  constructor(public el: ElementRef, private sanitizer: DomSanitizer,private afStorage: AngularFireStorage) {
-    this.sanitizer = sanitizer 
+  constructor(public el: ElementRef, private sanitizer: DomSanitizer, private afStorage: AngularFireStorage) {
+    this.sanitizer = sanitizer
   }
 
 
@@ -83,7 +84,7 @@ export class PresentationElementComponent implements OnInit {
     this.getTrustedUrl(this.imageLink);
   }
 
-  getTrustedUrl(url:any){ 
+  getTrustedUrl(url: any) {
     this.safeUrl = this.sanitizer.bypassSecurityTrustResourceUrl(url);
-   }
+  }
 }
