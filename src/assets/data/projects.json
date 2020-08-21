@@ -3,13 +3,13 @@
         "id": 1,
         "name": "LaunchBox",
         "description": "LaunchBox is free game launcher, actually it is a small system witch 'Patcher', so during your game development you can create new game patches and releases them using this system, client launcher will update games automatically. LaunchBox is also self updating when i will release new version it will automatically update on aplication startup. Main problems are solved such as version checking, reading your game web page, showing tips, etc. LaunchBox is written in qt/c++ so program is multiplatform. System is created for game developers who want to have custom game launcher witch auto updating system, every computation is processed on client side so there is no need for servers, becouse of that creating game pathes is bit complitated. To solve that problem i recorded video on youtube that describes all steps needed to publish game from beggining to the end, more details and links on my github site. Video shows Launcher used to publish my game called 'Sylio'",
-        "imageLink": "../assets/video/lbPres.mp4",
+        "imageLink": "https://www.youtube.com/embed/IHhCmWrRuaU",
         "githubLink": "https://github.com/sylwow/LaunchBox",
         "requirements": "Currently program is released only on windows 64 bit",
         "downloads": [
             {
                 "platform": "win",
-                "link": "../assets/images/LaunchBoxInstaller.exe"
+                "link": "LaunchBoxInstaller.exe"
             }
         ],
         "tools": [
@@ -39,7 +39,7 @@
         "id": 2,
         "name": "Engineering-Thesis",
         "description": "The purpose of this project was to build a system that allows user to control the Arlo mobile robot using static hand gestures, with use of camera. The project consists of three parts, the first was to develop script in Python that supposed to recognize the gestures controlling the robot. For this purpose I used convolutional neural network (pytorch library), which had to be properly trained. The next step was to create a robot program in C++ language that had to properly react to application commands. The last step was to handle communication between programs, Bluetooth 4.0 Low Energy standard was used for this purpose. Unfortunately, during the final control test Bluetooth module has been damaged, in this case I decided to use simple serial communication instead. The main assumptions of the project were to achieve real-time processing system and achieve high accuracy of hand gesture recognition. More informations on my github site",
-        "imageLink": "../assets/video/eThesis.mp4",
+        "imageLink": "https://www.youtube.com/embed/j6qOpACT1z0",
         "githubLink": "https://github.com/sylwow/Engineering-Thesis",
         "requirements": "",
         "downloads": [],
@@ -74,13 +74,13 @@
         "id": 3,
         "name": "MacroFlow",
         "description": "MacroFlow is a simple tool to create macros. Macro is a txt file that contains instructions/commands, each of them are described on my github site. For exmple you can write macro to move mouse on top of the screen and white some text by keyboard, macros can have simple controll flow instructions (if, while), variables, and arithetic (+,-,/,*). Due to simplicity you can create macros very quickly. You can assign a keyboard shortcut to the macro, and when you switch program to listening state, MacroFlow will wait for you to trigger the macro with the right hotkey, when same keyboard shortcut is pressed while macro is under execution, script is terminated. The number of macros the program can listen to is unlimited. Program is written in java witch javafx gui library",
-        "imageLink": "../assets/video/mfPres.mp4",
+        "imageLink": "https://www.youtube.com/embed/-p24Ygm_fNU",
         "githubLink": "https://github.com/sylwow/MacroFLow",
         "requirements": "Program requires to have build in java runtime environmet javafx library",
         "downloads": [
             {
                 "platform": "win|linux|mac",
-                "link": ""
+                "link": "MacroFLow.rar"
             }
         ],
         "tools": [
@@ -102,13 +102,13 @@
         "id": 4,
         "name": "Sylio",
         "description": "Sylio is simple multiplayer desktop game written in C++/Sfml, players controls snail and tries to survive as long as it is possible, using various powerups and collecting points. In game you can change music settings choose your nickname, controls and change number of rounds.",
-        "imageLink": "../assets/video/SylioPres.mp4",
+        "imageLink": "https://www.youtube.com/embed/T5zxTI1gxOQ",
         "githubLink": "https://github.com/sylwow/Sylio",
         "requirements": "Released only on Windows 32 bit",
         "downloads": [
             {
                 "platform": "win",
-                "link": ""
+                "link": "SylioInstaller.exe"
             }
         ],
         "tools": [
@@ -130,13 +130,13 @@
         "id": 5,
         "name": "Cards-against-the-world",
         "description": "Online card game for up to eight players in one party. The game is simple. Each round, one player asks a question from a black card, and everyone else answers with their funniest white card using voice communicator eg discord. Desktop aplication is build with c++/sfml and connects with c++/winsocket server. Backend is multithread server, each thread represend game lobby and handles things like game states, executing commands, exchanging data between players, checking if players are still connected etc. Each lobby has it own thread which handles unicode game chat. Server is simply secured you need to send specific code to get access. To run server code i used Amazon AWS it provides free cloud computing, within you can set up small windows server. Currently there is only one deck available \"Talia Rocka PL\"",
-        "imageLink": "../assets/video/cardPres.mp4",
+        "imageLink": "https://www.youtube.com/embed/4wimV6D_EXo",
         "githubLink": "https://github.com/sylwow/Cards-against-the-world",
         "requirements": "Released only on Windows 32 bit, server is currently unavailable",
         "downloads": [
             {
                 "platform": "win",
-                "link": ""
+                "link": "CardsInstaller.exe"
             }
         ],
         "tools": [
@@ -151,29 +151,6 @@
             {
                 "description": "SFML graphical library",
                 "img": "../assets/images/sfmlLogo.png"
-            }
-        ]
-    },
-    {
-        "id": 5,
-        "name": "CloudNote",
-        "description": "This project is currently under development, its asdddddddddddddddddddsssssssssss",
-        "imageLink": "https://media.giphy.com/media/IzXdG4zJlQsWH2DKbI/giphy.gif",
-        "githubLink": "https://github.com/sylwow/Cards-against-the-world",
-        "requirements": "fffffffffffffff",
-        "downloads": [],
-        "tools": [
-            {
-                "description": "C# Language",
-                "img": "../assets/images/cSharpLogo.png"
-            },
-            {
-                "description": "Visual studio IDE",
-                "img": "../assets/images/vsLogo.png"
-            },
-            {
-                "description": "Xamarin",
-                "img": "../assets/images/xamarinLogo.png"
             }
         ]
     }
