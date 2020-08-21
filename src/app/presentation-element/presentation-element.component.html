@@ -2,7 +2,7 @@
     <div [@backgroundIn]="animatePage ? 'show' : '*'" id="elBacgroundBar">
         <div id="element">
             <div [@imageIn]="animatePage ? 'show' : '*'" id="presentationImg">
-                <iframe width="100%" height="100%" [src]="getYtLink()" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="100%" height="100%" [src]="this.safeUrl" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <!---<img [@imageIn]="animatePage ? 'show' : '*'" id="presentationImg" [src]='imageLink'>--->
             <div [@textIn]="animatePage  ? 'show' : '*'" id="description">
@@ -22,7 +22,7 @@
                 <div id="links">
                     <a *ngIf="githubLink.length > 0" target="_blank" rel="noopener noreferrer" [href]="githubLink">
                     <img id="gitLink" src="../assets/images/githubLogo.png"></a>
-                    <button class="btn" *ngFor="let download of downloads; let i = index;" ng-click="downloadData(i)">
+                    <button class="btn" *ngFor="let download of downloads; let i = index;" (click)="downloadData(i)">
                         <img *ngIf="download.platform.includes('win')" class="downloadIcon"
                             src="../assets/images/winLogo.png">
                         <img *ngIf="download.platform.includes('linux')" class="downloadIcon"
