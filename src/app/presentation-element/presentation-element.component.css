@@ -30,9 +30,10 @@
 #element{
     z-index: 2;
     float: left;
-    height: 70vh;
+    height: 75vh;
     width: 100%;
     margin-top: 5vh;
+    margin-bottom: 5vh;
 }
 #presentationImg {
     float: left;
@@ -44,7 +45,7 @@
 #description {
     overflow: hidden;
     float: left;
-    height: 70vh;
+    height: 75vh;
     margin-left: 4%;
     width: 43%;
 }
@@ -72,23 +73,25 @@
 #descriptionText{
     float: left;
     margin-top: 2vh;
-    height: auto;
+    max-height: 36vh;
     width: 100%;
     text-align: justify;
     word-wrap: break-word;
-    font-size: 2vh;
+    font-size: 2.2vh;
+    overflow: hidden;
     font-family: 'lato';
     color: white;
 }
 #requirements{
     float: left;
     margin-top: 2vh;
-    height: auto;
+    max-height: 8vh;
     width: 100%;
     text-align: justify;
     word-wrap: break-word;
-    font-size: 2vh;
+    font-size: 2.2vh;
     font-family: 'lato';
+    overflow: hidden;
     color: white;
 }
 #links {
