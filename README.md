@@ -3,7 +3,7 @@ My portfolio web site, made with angular 10, and deployed on firebase:
 
 https://sharpsen.com
 
-https://sharpsen-15ade.web.app/
+https://sharpsen-15ade.web.app
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.5.
