@@ -30,9 +30,10 @@
 #element{
     z-index: 2;
     float: left;
-    height: 70vh;
+    height: 75vh;
     width: 100%;
     margin-top: 5vh;
+    margin-bottom: 5vh;
 }
 #presentationImg {
     float: left;
@@ -44,7 +45,7 @@
 #description {
     overflow: hidden;
     float: left;
-    height: 70vh;
+    height: 75vh;
     margin-left: 4%;
     width: 43%;
 }
@@ -72,32 +73,34 @@
 #descriptionText{
     float: left;
     margin-top: 2vh;
-    height: auto;
+    max-height: 36vh;
     width: 100%;
     text-align: justify;
     word-wrap: break-word;
-    font-size: 2vh;
+    font-size: 2.2vh;
+    overflow: hidden;
     font-family: 'lato';
     color: white;
 }
 #requirements{
     float: left;
     margin-top: 2vh;
-    height: auto;
+    max-height: 8vh;
     width: 100%;
     text-align: justify;
     word-wrap: break-word;
-    font-size: 2vh;
+    font-size: 2.2vh;
     font-family: 'lato';
+    overflow: hidden;
     color: white;
 }
-#links{
+#links {
     float: left;
     margin-top: 2vh;
     height: auto;
     width: 100%;
 }
-#gitLink{
+#gitLink {
     float: right;
     height: 7vh;
     margin-left: 2%;
@@ -106,6 +109,7 @@
 }
 #gitLink:hover{
     transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    cursor: pointer; 
 }
 .btn {
     float: left;
@@ -126,6 +130,7 @@
   }
   .btn:hover {
     background-color: RoyalBlue;
+    cursor: pointer; 
   }
   .downloadIcon{
       float: left;

@@ -14,26 +14,24 @@ import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http'
   styleUrls: ['./presentation-element.component.css'],
   animations: [
     trigger('backgroundIn', [
-      state('void', style({ transform: 'translateX(-100vw)' })),
-      state('*', style({ transform: 'translateX(-100vw)' })),
-      state('show', style({ transform: 'translateX(0vw) skewX(0deg)' })),
+      state('void', style({ transform: 'translateX(-100%)' })),
+      state('*', style({ transform: 'translateX(-100%)' })),
+      state('show', style({ transform: 'translateX(0) skewX(0deg)' })),
       transition('* <=> show',
-        group([
-          query('@imageIn', animateChild()),
-          query('@textIn', animateChild()),
           sequence([
-            animate('0.25s ease-in', style({ transform: 'translateX(-50vw) skewX(40deg)' })),
-            animate('0.25s ease-out', style({ transform: 'translateX(0vw) skewX(0deg)' }))
+            animate('0.25s ease-in', style({ transform: 'translateX(-50%) skewX(40deg)' })),
+            animate('0.25s ease-out', style({ transform: 'translateX(0) skewX(0deg)' })),
+            query('@imageIn', animateChild()),
+            query('@textIn', animateChild()),
           ])
-        ])
       ),
     ]),
     trigger('imageIn', [
-      state('void', style({ transform: 'translateX(-100vw)' })),
-      state('*', style({ transform: 'translateX(-100vw)' })),
-      state('show', style({ transform: 'translateX(0vw)' })),
+      state('void', style({ transform: 'translateX(-150%)' })),
+      state('*', style({ transform: 'translateX(-150%)' })),
+      state('show', style({ transform: 'translateX(0)' })),
       transition('* <=> show',
-        animate('0.5s 0.5s ease-in-out'),
+        animate('0.5s ease-in-out'),
       )
     ]),
     trigger('textIn', [
@@ -41,7 +39,7 @@ import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http'
       state('*', style({ opacity: 0 })),
       state('show', style({ opacity: 1 })),
       transition('* <=> show',
-        animate('0.5s 1s ease-in-out'),
+        animate('0.5s ease-in-out'),
       )
     ])
   ]
