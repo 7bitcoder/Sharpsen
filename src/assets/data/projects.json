@@ -1,10 +1,10 @@
 [
     {
         "id": 1,
-        "name": "LaunchBox",
-        "description": "LaunchBox is free game launcher, actually it is a small system witch 'Patcher', so during your game development you can create new game patches and releases them using this system, client launcher will update games automatically. LaunchBox is also self updating when i will release new version it will automatically update on aplication startup. Main problems are solved such as version checking, reading your game web page, showing tips, etc. LaunchBox is written in qt/c++ so program is multiplatform. System is created for game developers who want to have custom game launcher witch auto updating system, every computation is processed on client side so there is no need for servers, becouse of that creating game pathes is bit complitated. To solve that problem i posted video on youtube which describes all steps needed to publish game from beggining to the end, more details and links on my github site. Video shows Launcher used to publish my game called 'Sylio'",
+        "name": "SharpsenBox",
+        "description": "SharpsenBox is free game launcher, actually it is a small system witch 'Patcher', so during your game development you can create new game patches and releases them using this system, client launcher will update games automatically. SharpsenBox is also self updating when i will release new version it will automatically update on aplication startup. Main problems are solved such as version checking, reading your game web page, showing tips, etc. SharpsenBox is written in qt/c++ so program is multiplatform. System is created for game developers who want to have custom game launcher witch auto updating system, every computation is processed on client side so there is no need for servers, becouse of that creating game pathes is bit complitated. To solve that problem i posted video on youtube which describes all steps needed to publish game from beggining to the end, more details and links on my github site. Video shows Launcher used to publish my game called 'Sylio'",
         "imageLink": "https://www.youtube.com/embed/IHhCmWrRuaU",
-        "githubLink": "https://github.com/sylwow/LaunchBox",
+        "githubLink": "https://github.com/sylwow/SharpsenBox",
         "requirements": "Currently program is released only on windows 64 bit, dont install it in Program Files",
         "downloads": [
             {
