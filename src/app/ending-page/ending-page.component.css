@@ -6,7 +6,7 @@
 #endContainer{
     float:left;
     margin-left: 10%;
-    margin-top: 40vh;
+    margin-top: 30vh;
 }
 .end{
     float: left;
@@ -17,3 +17,21 @@
     font-size: 10vh;
     color: white;
 }
+#socialBar{
+    float: left;
+    height: auto; /* Full-height: remove this if you want "auto" height */
+    width: 100%; /* Set the width of the sidebar */
+    margin-top: 7vh;
+}
+
+.socialLogo{
+    height: 100px;
+    width: 100px;
+    margin-right: 50px;
+    float: left;
+    transition: transform .15s;
+}
+.socialLogo:hover {
+    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    cursor: pointer; 
+ }
