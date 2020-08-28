@@ -17,6 +17,16 @@ import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireStorageModule } from '@angular/fire/storage';
 import { AngularFireAuthModule } from '@angular/fire/auth';
+// for HttpClient import:
+import { LoadingBarHttpClientModule } from '@ngx-loading-bar/http-client';
+
+// for Router import:
+import { LoadingBarRouterModule } from '@ngx-loading-bar/router';
+
+// for Core import:
+import { LoadingBarModule } from '@ngx-loading-bar/core';
+import { ScrollBarComponent } from './scroll-bar/scroll-bar.component';
+
 
 @NgModule({
   declarations: [
@@ -26,7 +36,8 @@ import { AngularFireAuthModule } from '@angular/fire/auth';
     PresentationComponent,
     ParallaxDirective,
     PresentationElementComponent,
-    EndingPageComponent
+    EndingPageComponent,
+    ScrollBarComponent
   ],
   imports: [
     AngularFireModule.initializeApp(environment.firebase),
@@ -36,7 +47,16 @@ import { AngularFireAuthModule } from '@angular/fire/auth';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    HttpClientModule
+    HttpClientModule,
+
+    // for HttpClient use:
+    LoadingBarHttpClientModule,
+
+    // for Router use:
+    LoadingBarRouterModule,
+
+    // for Core use:
+    LoadingBarModule
   ],
   providers: [ProjectsService],
   bootstrap: [AppComponent]

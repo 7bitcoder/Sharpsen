@@ -13,14 +13,14 @@ declare var VANTA;
       state('void', style({ transform: 'translateX(100vw)' })),
       state('*', style({ transform: 'translateX(0vw)' })),
       transition('void <=> *', [
-        animate('1s ease-in-out')
+        animate('1s 1s ease-in-out')
       ])
     ]),
     trigger('flyInOutLanguages', [
       state('void', style({ transform: 'translateX(100vw)' })),
       state('*', style({ transform: 'translateX(0vw)' })),
       transition('void <=> *', [
-        animate('1s 1s ease-in-out')
+        animate('1s 2s ease-in-out')
       ])
     ])
   ]
