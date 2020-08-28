@@ -1,9 +1,9 @@
 #presentationBck{
+    position: relative;
+    z-index: 1;
     background-color: #a6c280;
-    position: absolute;
-    top: 100vh;
-    width: max(100vw, 1200px);
-    left: 0;
+    float: left;
+    width: 100%;
 }
 #myProjects{
     float: left;

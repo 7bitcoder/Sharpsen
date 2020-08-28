@@ -18,12 +18,12 @@ import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http'
       state('*', style({ transform: 'translateX(-100%)' })),
       state('show', style({ transform: 'translateX(0) skewX(0deg)' })),
       transition('* <=> show',
-          sequence([
-            animate('0.25s ease-in', style({ transform: 'translateX(-50%) skewX(40deg)' })),
-            animate('0.25s ease-out', style({ transform: 'translateX(0) skewX(0deg)' })),
-            query('@imageIn', animateChild()),
-            query('@textIn', animateChild()),
-          ])
+        sequence([
+          animate('0.25s ease-in', style({ transform: 'translateX(-50%) skewX(40deg)' })),
+          animate('0.25s ease-out', style({ transform: 'translateX(0) skewX(0deg)' })),
+          query('@imageIn', animateChild()),
+          query('@textIn', animateChild()),
+        ])
       ),
     ]),
     trigger('imageIn', [
@@ -68,7 +68,7 @@ export class PresentationElementComponent implements OnInit {
   @HostListener('window:scroll', ['$event'])
   checkScroll() {
     if (!this.animatePage) {
-      const componentPosition = this.el.nativeElement.offsetTop + window.innerHeight * 0.7 //* (this.index + 1.9)
+      const componentPosition = this.el.nativeElement.offsetTop + window.innerHeight / 2 //* (this.index + 1.9)
       const scrollPosition = window.pageYOffset
 
       if (scrollPosition >= componentPosition) {

@@ -28,7 +28,7 @@ export class PresentationComponent implements OnInit {
   @HostListener('window:scroll', ['$event'])
   checkScroll() {
     if (!this.show) {
-      const componentPosition = this.el.nativeElement.offsetTop + window.innerHeight
+      const componentPosition = this.el.nativeElement.offsetTop
       const scrollPosition = window.pageYOffset
 
       if (scrollPosition >= componentPosition) {

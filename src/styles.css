@@ -29,3 +29,14 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: rgb(184, 184, 184)
 }
+
+body {
+    scrollbar-color: grey rgb(190,190,190) !important; 
+    scrollbar-width: thin !important;          
+}
+
+:root{
+    scrollbar-color: grey rgb(190,190,190) !important;
+    scrollbar-width: thin !important;
+  }
+  
