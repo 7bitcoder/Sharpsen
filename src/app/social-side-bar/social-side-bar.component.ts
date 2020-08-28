@@ -8,9 +8,9 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
   styleUrls: ['./social-side-bar.component.css'],
   animations: [
     trigger('showSocials', [
-      state('void', style({ transform: 'translateX(100%)' })),
-      state('*', style({transform: 'translateX(100%)' })),
-      state('showed', style({transform: 'translateX(100% - 100px)' })),
+      state('void', style({ transform: 'translateX(-100px)' })),
+      state('*', style({ transform: 'translateX(-100px)' })),
+      state('showed', style({ transform: 'translateX(0)' })),
       transition('* <=> showed', [
         animate('0.2s ease-in-out')
       ])
@@ -24,11 +24,11 @@ export class SocialSideBarComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  show(): void{
+  show(): void {
     this.sh = true;
   }
 
-  hide(): void{
+  hide(): void {
     this.sh = false;
   }
 }
