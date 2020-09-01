@@ -50,8 +50,17 @@
     width: 43%;
 }
 #title{
-    width: 100%;
+    float: left;
+    display: block;
     font-size: 5vh;
+    font-family: 'lato';
+    color: white;
+}
+#date{
+    float: right;
+    display: block;
+    padding-top: 2vh;
+    font-size: 3vh;
     font-family: 'lato';
     color: white;
 }

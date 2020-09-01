@@ -56,6 +56,7 @@ export class PresentationElementComponent implements OnInit {
   @Input() downloads: { platform: string, link: string }[];
   @Input() toolsImg: { decription: string, img: string }[];
   @Input() requirements: string;
+  @Input() date: string;
   autoplayVideo: string = "false";
 
   public animatePage = false;

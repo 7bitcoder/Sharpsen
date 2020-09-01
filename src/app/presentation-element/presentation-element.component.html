@@ -8,8 +8,9 @@
             </div>
             <!---<img [@imageIn]="animatePage ? 'show' : '*'" id="presentationImg" [src]='imageLink'>--->
             <div [@textIn]="animatePage  ? 'show' : '*'" id="description">
-                <div id="title">
-                    {{title}}
+                <div style="float: left; width: 100%;">
+                    <div id="title">{{title}}</div>
+                    <div id="date">{{date}}</div>
                 </div>
                 <div id="tools">
                     <img *ngFor="let tool of toolsImg; index as i" class="toolLogo" [src]="tool.img"

@@ -1,5 +1,6 @@
 export interface project {
     id: number,
+    date: string,
     name: string,
     description: string,
     imageLink: string,

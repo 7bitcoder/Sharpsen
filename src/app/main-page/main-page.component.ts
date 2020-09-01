@@ -10,15 +10,15 @@ declare var VANTA;
   styleUrls: ['./main-page.component.css'],
   animations: [
     trigger('flyInOutLogo', [
-      state('void', style({ transform: 'translateX(100vw)' })),
-      state('*', style({ transform: 'translateX(0vw)' })),
+      state('void', style({ transform: 'translateX(100%)' })),
+      state('*', style({ transform: 'translateX(0%)' })),
       transition('void <=> *', [
         animate('1s 1s ease-in-out')
       ])
     ]),
     trigger('flyInOutLanguages', [
-      state('void', style({ transform: 'translateX(100vw)' })),
-      state('*', style({ transform: 'translateX(0vw)' })),
+      state('void', style({ transform: 'translateX(100%)' })),
+      state('*', style({ transform: 'translateX(0%)' })),
       transition('void <=> *', [
         animate('1s 2s ease-in-out')
       ])
