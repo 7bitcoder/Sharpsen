@@ -105,7 +105,7 @@
         "id": 4,
 		"date": "8.2019",
         "name": "Sylio",
-        "description": "Sylio is simple multiplayer desktop game written in C++/Sfml, players control snail and tries to survive as long as it is possible, using various powerups and collecting points. In game you can change music settings choose your nickname, controls and change number of rounds.",
+        "description": "Sylio is simple multiplayer desktop game written in C++/Sfml, players control snail and try to survive as long as it is possible, using various powerups and collecting points. In the game you can change music settings choose your nickname, controls and change the number of rounds.",
         "imageLink": "https://www.youtube.com/embed/T5zxTI1gxOQ",
         "githubLink": "https://github.com/sylwow/Sylio",
         "requirements": "Windows 32 bit /44MB",
