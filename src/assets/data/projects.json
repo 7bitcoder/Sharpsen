@@ -82,8 +82,12 @@
         "requirements": "Java 11 runtime environmet /34MB",
         "downloads": [
             {
-                "platform": "win|linux|mac",
+                "platform": "win",
                 "link": "https://onedrive.live.com/download?cid=607F7FD0AF3C1C7E&resid=607F7FD0AF3C1C7E%211984&authkey=AECnQ4gIjsyQjFM"
+            },
+			{
+                "platform": "linux",
+                "link": "https://onedrive.live.com/download?cid=607F7FD0AF3C1C7E&resid=607F7FD0AF3C1C7E%211995&authkey=AImkuy2PWlcCqLE"
             }
         ],
         "tools": [
